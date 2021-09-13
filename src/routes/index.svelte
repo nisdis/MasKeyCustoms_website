@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>MasKeyCustoms | Home</title>
 </svelte:head>
 
 <div class="content">
