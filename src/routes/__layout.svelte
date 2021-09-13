@@ -18,7 +18,7 @@
 		>
 		<br /> <img src="instagram.svg" alt="Instagram" /> &nbsp;&nbsp;<a
 			target="_blank"
-			href="https://www.instagram.com/maskey_customs/">maskey.customs</a
+			href="https://www.instagram.com/maskey_customs/">maskey_customs</a
 		>
 	</p>
 </footer>
