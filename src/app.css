@@ -1,34 +1,79 @@
 @import '@fontsource/fira-mono';
 
+@font-face {
+	font-family: Inter;
+	font-weight: bold;
+	src: url('fonts/Inter-Bold.woff2');
+}
+
+@font-face {
+	font-family: Metro;
+	src: url('fonts/Metropolis-Regular.woff2');
+}
+
+@font-face {
+	font-family: FreeSans;
+	font-weight: bold;
+	src: url('fonts/FreeSansBold.woff');
+}
+
+@font-face {
+	font-family: NimbusSansL;
+	font-weight: bold;
+	src: url('fonts/NimbusSanL-Bol-webfont.woff');
+}
+
+@font-face {
+	font-family: Heros;
+	font-weight: bold;
+	src: url('fonts/texgyreheros-bold-webfont.woff');
+}
+
+@font-face {
+	font-family: Traffic;
+	font-weight: bold;
+	src: url('fonts/XM Traffic Bd.ttf');
+}
+
 :root {
-	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	/* font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+	font-family: Metro, sans-serif;
 	--font-mono: 'Fira Mono', monospace;
+	--font-heading: 'Inter', sans-serif;
 	--pure-white: #ffffff;
-	--primary-color: #ecf791;
-	--secondary-color: #00b796;
-	--tertiary-color: #fb9a93;
+	--primary-color: #e9c46a;
+	--secondary-color: #2a9d8f;
+	--tertiary-color: #e76f51;
 	/* --tertiary-color: #6E3A07; */
-	--accent-color: #ff3e00;
+	/* --accent-color: #ff3e00; */
+	--accent-color: #2A9D8F;
 	--heading-color: rgba(0, 0, 0, 0.7);
-	--text-color: #444444;
+	/* --text-color: #444444; */
+	--text-color: #264653;
 	--background-without-opacity: rgba(255, 255, 255, 0.7);
 	--column-width: 42rem;
 	--column-margin-top: 1rem;
 }
 
-html{
+*::after,
+*::before,
+* {
+	box-sizing: inherit;
+}
+
+html {
 	background-color: black;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
+	/* width: 100%;
+	height: 100%; */
+	/* overflow: hidden; */
 }
 
 body {
 	margin: 0;
-	width: 100%;
+	/* width: 100%;
 	height: 100%;
-	overflow: hidden;
+	overflow: hidden; */
 	/* background: linear-gradient(
 		180deg,
 		var(--primary-color) 0%,
@@ -67,13 +112,11 @@ body {
 }
 
 h1,
-h2
- {
+h2 {
 	font-weight: 600;
 	color: var(--heading-color);
-	font-family: var(--font-mono);
+	font-family: var(--font-heading);
 	letter-spacing: 1px;
-
 }
 
 p {
@@ -98,7 +141,7 @@ h1 {
 	color: var(--secondary-color);
 	font-size: 3rem;
 	/* text-align: center; */
-	font-family: var(--font-mono);
+	font-family: var(--font-heading);
 }
 
 h2 {
@@ -140,5 +183,4 @@ button:focus:not(:focus-visible) {
 		border-width: 0.5rem;
 		overflow: auto;
 	}
-	
 }

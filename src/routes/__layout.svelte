@@ -12,26 +12,29 @@
 
 <footer>
 	<p>
-		<img src="email.svg" alt="Email" /> &nbsp;&nbsp;<a
-			target="_blank"
-			href="mailto:maskeycus@gmail.com">maskeycus@gmail.com</a
-		>
-		<br /> <img src="instagram.svg" alt="Instagram" /> &nbsp;&nbsp;<a
-			target="_blank"
-			href="https://www.instagram.com/maskey_customs/">maskey_customs</a
+		<a target="_blank" href="mailto:maskeycus@gmail.com"
+			><img src="email.svg" alt="Email" />
+		</a>&nbsp;&nbsp;
+		<a target="_blank" href="https://www.instagram.com/maskey_customs/">
+			<img src="instagram.svg" alt="Instagram" /></a
 		>
 	</p>
 </footer>
 
 <style>
+	*::after, *::before, * {
+	box-sizing:border-box;
+}
 	main {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
+		/* padding: 1rem; */
 		width: 100%;
-		max-width: 1024px;
-		margin: 0 auto;
+		/* height: 120%; */
+		/* overflow-x: scroll; */
+		/* max-width: 1024px; */
+		margin: 0px auto 0 auto;
 		box-sizing: border-box;
 	}
 
@@ -40,13 +43,14 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding-top: 20px;
-		background: linear-gradient(
-			180deg,
+		padding-top: 40px;
+		/* background: linear-gradient( */
+			/* 180deg, */
 			/* rgba(236, 247, 145, 0.5) 0.45%, */ /* #446a87 35.35% */ /* #446a87 35.35% */
-				/* #6E3A07 0.35%, */ rgba(236, 247, 145, 0.7) 0.45%,
-			/* #446a87 35.35%, */ var(--tertiary-color) 35.35% /* var(--text-color) 55.35% */
-		);
+				/* #6E3A07 0.35%,rgba(236, 247, 145, 0.7) 0.45%,
+			/* #446a87 35.35%,  var(--tertiary-color)15.35% /* var(--text-color) 55.35% */
+		/* ); */
+		background-color: var(--tertiary-color);
 	}
 
 	footer a {
@@ -62,20 +66,23 @@
 
 	footer img {
 		/* vertical-align:text-top; */
-		width: 1rem;
+		width: 2rem;
 	}
-
-	
 
 	@media (max-width: 480px) {
 		footer {
 			padding: 10px 0px 0 0;
-			background: linear-gradient(
-				180deg,
+			background: var(--tertiary-color) 5.35%;
+			/* background: linear-gradient( */
+				/* 180deg, */
 				/* rgba(236, 247, 145, 0.5) 0.45%, */ /* #446a87 35.35% */ /* #446a87 35.35% */
-					/* #6E3A07 0.35%, */ rgba(236, 247, 145, 0.7) 0.45%,
-				/* #446a87 35.35%, */ var(--tertiary-color) 5.35% /* var(--text-color) 55.35% */
-			);
+					/* #6E3A07 0.35%,  rgba(236, 247, 145, 0.7) 0.45%,
+				/* #446a87 35.35%,  var(--tertiary-color) 5.35% /* var(--text-color) 55.35% */
+			/* ); */
+		}
+		footer img {
+			/* vertical-align:text-top; */
+			width: 1rem;
 		}
 	}
 </style>

@@ -18,7 +18,7 @@
 
 	const sizeTheKeyboard = () => {
 		let box = document.querySelector('div');
-		deviceWidth = box.clientWidth;
+		deviceWidth = box.offsetWidth;
 		if (keyboardSize === 'big' || deviceWidth > 700) {
 			symbolSize = 'large';
 			keySize = 1;
@@ -40,20 +40,20 @@
 		<k-row>
 			{#if j === 0}
 				{#each [1, 3, 4] as letter, i}
-					<k-cap class={'geek'} style={`--w:${keySize};--h:${keySize}`}>
+					<k-cap on:mousedown={handleClick} class={'geek'} style={`--w:${keySize};--h:${keySize}`}>
 						<k-legend class={`${symbolPosition} ${symbolSize}`} />
 					</k-cap>
 				{/each}
 			{/if}
 			{#if j === 1}
 				{#each [1, 3, 4] as letter, i}
-					<k-cap class={'geek'} style={`--w:${keySize};--h:${keySize}`}>
+					<k-cap on:mousedown={handleClick} class={'geek'} style={`--w:${keySize};--h:${keySize}`}>
 						<k-legend class={`${symbolPosition} ${symbolSize}`} />
 					</k-cap>
 				{/each}
 			{/if}
 			{#if j === 2}
-				<k-cap class={'geek'} style={`--w:${keySize};--h:${keySize}`}>
+				<k-cap on:mousedown={handleClick} class={'geek'} style={`--w:${keySize};--h:${keySize}`}>
 					<k-legend class={`${symbolPosition} ${symbolSize}`} />
 				</k-cap>
 			{/if}
@@ -68,21 +68,21 @@
 			{/each}
 			{#if j === 0}
 				{#each [0, 1, 2] as letter, i}
-					<k-cap class={'geek'} style={`--w:${keySize};--h:${keySize}`}>
+					<k-cap on:mousedown={handleClick} class={'geek'} style={`--w:${keySize};--h:${keySize}`}>
 						<k-legend class={`${symbolPosition} ${symbolSize}`} />
 					</k-cap>
 				{/each}
 			{/if}
 			{#if j === 1}
 				{#each [1, 2, 3] as letter, i}
-					<k-cap class={'geek'} style={`--w:${keySize};--h:${keySize}`}>
+					<k-cap on:mousedown={handleClick} class={'geek'} style={`--w:${keySize};--h:${keySize}`}>
 						<k-legend class={`${symbolPosition} ${symbolSize}`} />
 					</k-cap>
 				{/each}
 			{/if}
 			{#if j === 2}
 				{#each [3] as letter, i}
-					<k-cap class={'geek'} style={`--w:${keySize};--h:${keySize}`}>
+					<k-cap on:mousedown={handleClick} class={'geek'} style={`--w:${keySize};--h:${keySize}`}>
 						<k-legend class={`${symbolPosition} ${symbolSize}`} />
 					</k-cap>
 				{/each}
